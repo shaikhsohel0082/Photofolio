@@ -1,38 +1,270 @@
-.App {
-  text-align: center;
+.root {
+  height: 100%;
+  width: 100%;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  position: sticky;
+  height: 12vh;
+  width: 100%;
+  background-color: rgb(127, 255, 244);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-name {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-left: 15px;
+  color: brown;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo-container {
+  vertical-align: middle
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+
+}
+
+.home {
+
+  width: 75%;
+  margin: auto;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: scroll;
+  padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.home::-webkit-scrollbar {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  position: absolute;
+  left: 60%;
+  margin-top: 20px;
+  font-size: larger;
+  padding: 5px;
+  background-color: rgb(102, 251, 131);
+  border: 1px solid rgb(102, 255, 0);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(0, 250, 54);
+}
+
+.albums {
+  min-height: 100px;
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.form {
+  /* border: 1px solid red; */
+  padding: 10px;
+  min-width: 40%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin-top: 30px;
+
+}
+
+.form input {
+  min-width: 80%;
+  height: 30px;
+  margin-right: 20px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form button {
+  padding: 5px;
+}
+
+.btn-add {
+  font-size: larger;
+  padding: 5px;
+  background-color: rgb(102, 251, 131);
+  border: 1px solid rgb(102, 255, 0);
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+.btn-add:hover {
+  background-color: rgb(0, 250, 54);
+}
+
+.btn-cancel {
+  font-size: larger;
+  padding: 5px;
+  background-color: rgb(238, 105, 44);
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 5px;
+}
+
+.btn-cancel:hover {
+  background-color: rgb(247, 71, 36);
+}
+
+.album-container {
+  height: 220px;
+  width: 200px;
+  border: 2px dotted cadetblue;
+  border-radius: 10%;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  overflow-y: scroll;
+}
+
+.album-container::-webkit-scrollbar {
+  display: none;
+}
+
+.album-container h2 {
+  text-align: center;
+  padding: 5px;
+}
+
+.album {
+  height: 130px;
+  width: 150px;
+  background: url(https://cdn-icons-png.flaticon.com/128/7968/7968620.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: auto;
+
+}
+
+.album-container:hover {
+  background-color: rgb(195, 246, 246);
+}
+
+.img-form {
+  padding: 10px;
+  max-width: 40%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  margin-top: 30px;
+
+}
+
+.img-form input {
+  min-width: 80%;
+  height: 30px;
+  margin-right: 20px;
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.img-form button {
+  padding: 5px;
+}
+
+.btn-back {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.btn-addimage {
+  margin-top: 10px;
+  position: absolute;
+  left: 60%;
+}
+
+.image-list {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.image-heading {
+  text-align: center;
+  font-family: monospace;
+  color: crimson;
+}
+
+.image-name {
+  display: inline;
+  margin-righ: 10px;
+  overflow: hidden;
+}
+
+.image-container {
+  max-height: 300px;
+  max-width: 300px;
+  border: 1px dotted cadetblue;
+  font-size: larger;
+  color: rgb(168, 45, 1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.symbol-img {
+  height: 30px;
+  width: 30px;
+  opacity: 0.8;
+}
+
+.symbol-img:hover {
+  opacity: 1;
+
+}
+
+.btnsymbol {
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  float: right;
+  margin-top: 4px;
+}
+
+.modal-overlay {
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  z-index: 1;
+  background-color: rgb(0, 0, 0, 0.5);
+  opacity: 1 !important;
+}
+
+.imageBody {
+  opacity: 0.2;
+
+}
+
+
+.modal-btn {
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: red;
+  font-size: xx-large;
+}
+
+.image {
+  max-height: 200px;
+  max-width: 290px;
 }
