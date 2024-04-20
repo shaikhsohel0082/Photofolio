@@ -3,6 +3,9 @@
 
 This is a simple web application for creating and managing photo albums. Users can create albums, add images to albums, delete images, and download images. The application uses Firebase Firestore for data storage and React with React Router for the frontend.
 
+## Hosted Link:
+https://photofolio-0fao.onrender.com
+
 ## Features
 
 - Create new albums
